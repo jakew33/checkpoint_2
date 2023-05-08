@@ -129,7 +129,7 @@ function buyUpgrades(upgradeName) {
   }
 }
 
-// Auto Foragers
+// Auto Upgrades
 function robotInterval() {
   const robotUpgrade = upgrades.find(upgrades => upgrades.name == 'robot');
   if (robotUpgrade && robotUpgrade.isPurchased) {

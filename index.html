@@ -32,14 +32,14 @@
   </style>
   <body class="container-fluid">
     <!-- Shop -->
-    <div class="row justify-content-center shopCard">
+    <main class="row justify-content-center shopCard">
       <div class="col-7 text-center text-light" id="shop">
-        <div class="row border-dark mt-3">
+        <div>
           <h4>SHOP</h4>
         </div>
         <div class="row upgrades">
           <div class="col-12 col-sm-6">
-            <h5 class="mb-3">Multipliers:</h5>
+            <h5>Multipliers:</h5>
             <h5>
               <span id="shovelPrice" class="icon2">10</span>
               <button class="btn">
@@ -50,8 +50,8 @@
                 />
               </button>
               <span id="shovelMultiplier"></span>
-              <img class="img-fluid icon2" src="assets/shovel.png" />Shovel:
-              +5<img class="img-fluid icon3" src="assets/smallshroom.png" />
+              <img class="img-fluid icon2" src="assets/shovel.png" />Shovel: +5
+              <img class="img-fluid icon3" src="assets/smallshroom.png" />
               Per Click
             </h5>
             <h5>
@@ -64,16 +64,14 @@
                 />
               </button>
               <span id="axeMultiplier"></span>
-              <img class="img-fluid icon2" src="assets/axe.png" />Axe: +15<img
-                class="img-fluid icon3"
-                src="assets/smallshroom.png"
-              />
+              <img class="img-fluid icon2" src="assets/axe.png" />Axe: +15
+              <img class="img-fluid icon3" src="assets/smallshroom.png" />
               Per Click
             </h5>
           </div>
 
           <div class="col-12 col-sm-6">
-            <h5 class="mb-3">Auto Foragers:</h5>
+            <h5 class="">Auto Foragers:</h5>
             <h5>
               <span id="robotPrice" class="icon2">50</span>
               <button class="btn">
@@ -84,8 +82,8 @@
                 />
               </button>
               <span id="robotForager"></span>
-              <img class="img-fluid icon2" src="assets/robot.png" />Robot:
-              +10<img class="img-fluid icon3" src="assets/smallshroom.png" />
+              <img class="img-fluid icon2" src="assets/robot.png" />Robot: +10
+              <img class="img-fluid icon3" src="assets/smallshroom.png" />
               Every 3 Seconds
             </h5>
             <h5>
@@ -106,12 +104,12 @@
           </div>
         </div>
       </div>
-    </div>
+    </main>
 
-    <main class="row p-3">
+    <!-- Player Stats/Inventory -->
+    <div class="row p-3">
       <div class="col-5">
         <div class="row text-light">
-          <!-- Player Stats -->
           <div class="col-4 p-3 statCard" id="stats">
             <div class="row text-center">
               <h3>Stats</h3>
@@ -164,10 +162,10 @@
           </div>
         </div>
       </div>
-    </main>
-
+    </div>
+    <!-- Big Mushroom -->
     <div class="row justify-content-center">
-      <div class="col-6 text-center text-dark bigShroom">
+      <div class="col-6 bigShroom">
         <div id="forageShrooms">
           <img
             onclick="forageShrooms()"
